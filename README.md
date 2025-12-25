@@ -310,7 +310,7 @@ The agent has access to the following tools via MCP server. These tools enable t
    
    Or using `pip`:
    ```bash
-   pip install -r requirement.txt
+   pip install -r requirements.txt
    ```
 
 4. **Configure environment variables**
@@ -329,6 +329,11 @@ The agent has access to the following tools via MCP server. These tools enable t
 python app.py
 ```
 
+Or using `uv`:
+   ```bash
+   uv run app.py
+   ```
+
 The Gradio interface will launch and provide:
 - Local URL: `http://127.0.0.1:7860`
 - Public URL: Shareable link for external access
@@ -343,7 +348,7 @@ showcase/
 ├── prompt.py              # System prompt and agent instructions
 ├── logger.py              # Logging configuration
 ├── pyproject.toml         # Project metadata and dependencies
-├── requirement.txt        # Pip requirements file
+├── requirements.txt        # Pip requirements file
 ├── .env.example           # Environment variable template
 ├── .env                   # Environment variables (gitignored)
 ├── .gitignore             # Git ignore rules
